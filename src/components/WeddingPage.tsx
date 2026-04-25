@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import FlowersPinkHero from '../themes/flowers-pink/HeroSection';
+import FlowersPinkHennaDetails from '../themes/flowers-pink/HennaDetailsSection';
 import FlowersPinkEventDetails from '../themes/flowers-pink/EventDetailsSection';
 import FlowersPinkFooter from '../themes/flowers-pink/Footer';
 
@@ -23,8 +24,10 @@ export default function WeddingPage({ showTransition, isOpen }: WeddingPageProps
         }`}
     >
       <FlowersPinkHero />
+      <FlowersPinkHennaDetails />
       <FlowersPinkEventDetails />
       <FlowersPinkFooter />
     </div>
   );
 }
+
