@@ -44,11 +44,11 @@ export default function GlowEnvelopeLanding({ onOpen, onStart }: GlowEnvelopeLan
             <style>
                 {`
                     .dynamic-envelope-bg {
-                        background-image: url('/flowers-pink-envelopemobil.png');
+                        background-image: url('/flowers-pink-envelopemobil.webp');
                     }
                     @media (min-width: 768px) {
                         .dynamic-envelope-bg {
-                            background-image: url('/flowers-pink-envelope.png');
+                            background-image: url('/flowers-pink-envelope.webp');
                         }
                     }
                 `}
