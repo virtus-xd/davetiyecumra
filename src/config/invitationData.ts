@@ -32,8 +32,8 @@ export const invitationData = {
         name: "Erkek Evi",                          // TODO: Erkek evinin adı veya mahalle/sokak ismi
         addressLine1: "",            // TODO: Cadde/Sokak/No bilgisi
         addressLine2: "Bağlar Mah. 72211 Sk. No:3 Çumra / Konya",         // TODO: İlçe/İl bilgisi doğru mu?
-        googleMapsUrl: "https://maps.app.goo.gl/JJYKNDp5zRArbykH8",                           // TODO: Google Maps kısa linki
-        googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.03596754806654!2d32.779079158139105!3d37.572625803635056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14da0c6e61ffe78b%3A0xa47b9e705013e795!2zQmFyZGFrw6fEsSwgNzIxMTIuIFNrLiBObzozLCA0MjUwMCDDh3VtcmEvS29ueWE!5e0!3m2!1str!2str!4v1777132157982!5m2!1str!2str"
+        googleMapsUrl: "https://maps.app.goo.gl/ZiaBANnrUwaJbSkt9",                           // TODO: Google Maps kısa linki
+        googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d235.01390537750413!2d32.76499502377792!3d37.5796158844442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDM0JzQ2LjUiTiAzMsKwNDUnNTQuMSJF!5e0!3m2!1str!2str!4v1777141067352!5m2!1str!2str"
     },
 
     // =============================================
