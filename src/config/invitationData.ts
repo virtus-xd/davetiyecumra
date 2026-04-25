@@ -19,9 +19,9 @@ export const invitationData = {
         label: "Kız Evi Adresi",
         name: "Kız Evi",                          // TODO: Gelin evinin adı veya mahalle/sokak ismi
         addressLine1: "",            // TODO: Cadde/Sokak/No bilgisi
-        addressLine2: "Çaybaşı Mah. Ebul Feyiz Elçibey Cd. Kardelen Sitesi No:24 Çumra / Konya",         // TODO: İlçe/İl bilgisi doğru mu?
-        googleMapsUrl: "https://maps.app.goo.gl/2iuaSZBY9i5HgAjj9",                           // TODO: Google Maps kısa linki (maps.app.goo.gl/...)
-        googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d395.3672432447983!2d32.789154194657684!3d37.556525767267246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14da0c3922e9b67f%3A0x4db7cb7fa13e8f9a!2zw4dheWJhxZ_EsSwgRWJ1bCBGZXlpeiBFbMOnaWJleSBDZC4gTm86MjQsIDQyNTAwIMOHdW1yYS9Lb255YQ!5e0!3m2!1str!2str!4v1777131920411!5m2!1str!2str"
+        addressLine2: "Çaybaşı Mah. Ebul Feyiz Elçibey Cd. Kardelen Sitesi No:24 Kat:4 Daire:18 Çumra / Konya",         // TODO: İlçe/İl bilgisi doğru mu?
+        googleMapsUrl: "https://maps.app.goo.gl/JKtNynaFutvd7HCZ6",                           // TODO: Google Maps kısa linki (maps.app.goo.gl/...)
+        googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.6738943987526!2d32.786303642802146!3d37.56223545511151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14da0c3ff1cbea85%3A0x8dca65e3eb3e2e0d!2zw4dheWJhxZ_EsSwgS3VydWthZmEgTWVobWV0IENkLiBObzoxMywgNDI1MDAgw4d1bXJhL0tvbnlh!5e0!3m2!1str!2str!4v1777139341688!5m2!1str!2str"
     },
 
     // =============================================
@@ -31,7 +31,7 @@ export const invitationData = {
         label: "Erkek Evi Adresi",
         name: "Erkek Evi",                          // TODO: Erkek evinin adı veya mahalle/sokak ismi
         addressLine1: "",            // TODO: Cadde/Sokak/No bilgisi
-        addressLine2: "Bağlar Mah. 72112. Sk. No:3 Çumra / Konya",         // TODO: İlçe/İl bilgisi doğru mu?
+        addressLine2: "Bağlar Mah. 72211 Sk. No:3 Çumra / Konya",         // TODO: İlçe/İl bilgisi doğru mu?
         googleMapsUrl: "https://maps.app.goo.gl/JJYKNDp5zRArbykH8",                           // TODO: Google Maps kısa linki
         googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.03596754806654!2d32.779079158139105!3d37.572625803635056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14da0c6e61ffe78b%3A0xa47b9e705013e795!2zQmFyZGFrw6fEsSwgNzIxMTIuIFNrLiBObzozLCA0MjUwMCDDh3VtcmEvS29ueWE!5e0!3m2!1str!2str!4v1777132157982!5m2!1str!2str"
     },
@@ -40,9 +40,10 @@ export const invitationData = {
     // 🎉 KINA GECESİ BİLGİLERİ
     // =============================================
     henna: {
+        heroLabel: "Kına Gecesi",                     // Hero section'da görünen etiket
         dateStr: "2026-05-01T19:30:00",              // TODO: Kına tarihi ve saati doğru mu?
         dateDisplay: "1 Mayıs 2026",                 // TODO: Doğru mu?
-        timeDisplay: "CUMARTESİ, SAAT 19:30",        // TODO: Gün ve saat doğru mu?
+        timeDisplay: "CUMA, SAAT 19:30",        // TODO: Gün ve saat doğru mu?
 
         // 📍 KINA MEKANI — Aşağıdaki 4 alanı doldurun
         venue: {
@@ -65,13 +66,13 @@ export const invitationData = {
             {
                 iconName: "Clock",
                 title: "Kına Yakma",                  // TODO: Başlık doğru mu?
-                time: "22:00",                       // TODO: Saat doğru mu?
+                time: "21:30",                       // TODO: Saat doğru mu?
                 description: "Geleneklerimizle bezenen özel anımız."
             },
             {
                 iconName: "Calendar",
                 title: "Eğlence",                    // TODO: Başlık doğru mu?
-                time: "23:00",                       // TODO: Saat doğru mu?
+                time: "22:00",                       // TODO: Saat doğru mu?
                 description: "Sevdiklerimizle coşkulu bir gece!"
             }
         ]
@@ -80,6 +81,7 @@ export const invitationData = {
     // =============================================
     // 💒 DÜĞÜN BİLGİLERİ (Mekan zaten dolu ✅)
     // =============================================
+    weddingLabel: "Düğün",                           // Hero section'da görünen etiket
     venue: {
         label: "Düğün Salonu",
         name: "Mavi Bahçe Kır Düğün Salonu",         // ✅
@@ -106,7 +108,7 @@ export const invitationData = {
         {
             iconName: "Clock",
             title: "Takı Merasimi",
-            time: "21:00",                           // TODO: Saat doğru mu?
+            time: "20:00",                           // TODO: Saat doğru mu?
             description: "Mutluluğumuza ortak olun."
         }
     ],

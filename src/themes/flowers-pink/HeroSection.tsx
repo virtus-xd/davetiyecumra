@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Heart } from 'lucide-react';
 import { invitationData } from '../../config/invitationData';
 
 export default function HeroSection() {
@@ -50,15 +50,44 @@ export default function HeroSection() {
                     {invitationData.eventType}
                 </p>
 
-                <div className="animate-slide-up delay-300 mt-6 mb-10 text-center">
-                    <p className="text-lg md:text-xl text-[#4b5c51] font-serif tracking-[0.2em] uppercase mb-2">
-                        {invitationData.dateDisplay}
-                    </p>
-                    <p className="text-[10px] md:text-xs text-[#8c9c90] font-sans tracking-[0.25em] uppercase">
-                        {invitationData.timeDisplay}
-                    </p>
+                <div className="animate-slide-up delay-300 mt-6 mb-10 w-full">
+                    <div className="flex items-stretch justify-center gap-4 md:gap-8">
+                        {/* Kına Tarihi */}
+                        <div className="flex-1 text-center px-3 py-4 rounded-2xl bg-[#fdfaf9]/80 border border-[#f0e4e4] shadow-sm">
+                            <div className="flex items-center justify-center mb-2">
+                                <span className="text-[10px] md:text-xs text-[#d4a5a5] font-sans tracking-[0.25em] uppercase font-semibold">{invitationData.henna.heroLabel}</span>
+                            </div>
+                            <p className="text-base md:text-lg text-[#4b5c51] font-serif tracking-[0.15em] uppercase">
+                                {invitationData.henna.dateDisplay}
+                            </p>
+                            <p className="text-[9px] md:text-[10px] text-[#8c9c90] font-sans tracking-[0.2em] uppercase mt-1">
+                                {invitationData.henna.timeDisplay}
+                            </p>
+                        </div>
+
+                        {/* Divider */}
+                        <div className="flex flex-col items-center justify-center gap-1">
+                            <div className="w-[1px] h-6 bg-gradient-to-b from-transparent via-[#e6d5d5] to-transparent"></div>
+                            <Heart className="w-3.5 h-3.5 text-[#d4a5a5] fill-[#d4a5a5]/30" />
+                            <div className="w-[1px] h-6 bg-gradient-to-b from-transparent via-[#e6d5d5] to-transparent"></div>
+                        </div>
+
+                        {/* Düğün Tarihi */}
+                        <div className="flex-1 text-center px-3 py-4 rounded-2xl bg-[#fdfaf9]/80 border border-[#f0e4e4] shadow-sm">
+                            <div className="flex items-center justify-center mb-2">
+                                <span className="text-[10px] md:text-xs text-[#d4a5a5] font-sans tracking-[0.25em] uppercase font-semibold">{invitationData.weddingLabel}</span>
+                            </div>
+                            <p className="text-base md:text-lg text-[#4b5c51] font-serif tracking-[0.15em] uppercase">
+                                {invitationData.dateDisplay}
+                            </p>
+                            <p className="text-[9px] md:text-[10px] text-[#8c9c90] font-sans tracking-[0.2em] uppercase mt-1">
+                                {invitationData.timeDisplay}
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
+                <p className="text-[10px] md:text-xs text-[#8c9c90] font-sans tracking-[0.3em] uppercase mb-4 animate-slide-up delay-400">Düğüne Kalan Süre</p>
                 <div className="flex justify-center gap-4 md:gap-8 animate-slide-up delay-400 pb-2 w-full max-w-md px-2">
                     {[{ label: 'GÜN', value: timeLeft.days }, { label: 'SAAT', value: timeLeft.hours }, { label: 'DAKİKA', value: timeLeft.minutes }, { label: 'SANİYE', value: timeLeft.seconds }].map((item) => (
                         <div key={item.label} className="text-center flex flex-col items-center flex-1">
