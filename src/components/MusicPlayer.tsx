@@ -13,6 +13,7 @@ export default function MusicPlayer({ src, startPlaying }: MusicPlayerProps) {
     useEffect(() => {
         const attemptPlay = async () => {
             if (startPlaying && audioRef.current) {
+                audioRef.current.volume = 0.5; // Müzik sesini yarı yarıya azalt
                 try {
                     await audioRef.current.play();
                 } catch (error) {
